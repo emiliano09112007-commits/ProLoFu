@@ -1,0 +1,71 @@
+#1
+def multiplicar(x, y):
+    resultado = x * y
+    return resultado
+
+def sumar (x, y):
+    resultado = x + y
+    return resultado
+
+def operar(x, y, fn):
+    resultado = fn(x, y)
+    return resultado
+    
+resultado = operar(2, 5, sumar)
+print(resultado)
+resultado = operar(100, 50, multiplicar)
+print(resultado)
+
+#2
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+        
+    def es_mayor(self, fn):
+        return fn(self.edad)
+        
+def mayor_mexico(edad):
+    if edad >= 18:
+        return True
+    else:
+        return False
+
+def mayor_eua(edad):
+    if edad >= 21:
+        return True
+    else:
+        return False
+
+persona1 = Persona("Pedro", 18)
+
+if persona1.es_mayor(mayor_mexico):
+    print("Es mayor en México")
+    
+else:
+    print("No es mayor en México")
+
+if persona1.es_mayor(mayor_eua):
+    print("Es mayor en EUA")
+
+else:
+    print("No es mayor en EUA")
+
+#3
+def calcular_precio(precio, fn):
+    return fn(precio)
+    
+def precio_normal(precio):
+    return precio
+    
+def precio_estudiante(precio):
+    return precio * 0.8
+
+def precio_vip(precio):
+    return precio * 0.7
+    
+precio = 500
+
+print(calcular_precio(precio, precio_normal))
+print(calcular_precio(precio, precio_estudiante))
+print(calcular_precio(precio, precio_vip))
