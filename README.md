@@ -1,4 +1,4 @@
 # ProLoFu
-Trabajos de Programación Lógica y Funcional Zamudio Juárez Mauricio
+Trabajos de Programación Lógica y Funcional
 
 Medina Macias Cesar Emiliano
