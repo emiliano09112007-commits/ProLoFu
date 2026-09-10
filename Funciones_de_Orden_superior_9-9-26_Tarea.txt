@@ -1,0 +1,45 @@
+Funciones de Orden Superior
+1: 
+
+    return promocion(precio)
+
+def precio_normal(precio):
+    return precio
+
+def rebaja_10(precio):
+    return precio * 0.90
+
+def rebaja_20(precio):
+    return precio * 0.80
+
+def mitad(precio):
+    return precio * 0.50
+
+precio = 850
+print("Precio inicial:", precio)
+print("Precio normal:", aplicar_promocion(precio, precio_normal))
+print("Con 10% de descuento:", aplicar_promocion(precio, rebaja_10))
+print("Con 20% de descuento:", aplicar_promocion(precio, rebaja_20))
+print("Con 50% de descuento:", aplicar_promocion(precio, mitad)) 
+
+2:
+
+def convertir_temperatura(valor, conversion):
+    return conversion(valor)
+
+def c_a_f(valor):
+    return (valor * 9 / 5) + 32
+
+def f_a_c(valor):
+    return (valor - 32) * 5 / 9
+
+def c_a_k(valor):
+    return valor + 273.15
+
+temperatura_c = 30
+print("Temperatura en Celsius:", temperatura_c)
+print("Celsius a Fahrenheit:", convertir_temperatura(temperatura_c, c_a_f))
+print("Celsius a Kelvin:", convertir_temperatura(temperatura_c, c_a_k))
+
+temperatura_f = 86
+print("Fahrenheit a Celsius:", convertir_temperatura(temperatura_f, f_a_c))
