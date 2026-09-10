@@ -1,2 +1,4 @@
 # ProLoFu
-Repositorio de trabajos/códigos para la asignatura de Programación Lógica y Funcional.
+Trabajos de Programación Lógica y Funcional Zamudio Juárez Mauricio
+
+Medina Macias Cesar Emiliano
